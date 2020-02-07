@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        table, th, td {
+        padding: 10px;
+        border: 1px solid black; 
+        border-collapse: collapse;
+        }
+      </style>
+</head>
+<body>
+    <div id="task_1">
+        <nav>
+            <a href="#task_2">Task2</a><br>
+            <a href="#task_3">Task3</a><br>
+            <a href="#task_4">Task4</a><br>
+        </nav>
+    </div>
+    
+    <div id="task_2">
+        <h1>CV</h1>
+        
+        
+            <h2>Personal Information</h2> <br>
+            <img src="slika_za_vizu.jpg" alt="My picture" height="250" width="200"> <br>
+            Name: <strong>Zoja Šćekić</strong><br>
+            Date of Birth: 07/03/1999 <br>
+            Phone number: 067432687 <br>
+            Email address: zoja.scekic@gmail.com <br>
+            LinkedIn: <a href="https://www.linkedin.com/in/zoja-%C5%A1%C4%87eki%C4%87-2b03a417b/">Connect with me!</a> <br>
+    
+
+        
+            <h2>Education</h2>
+            <ol type="a">
+                <li>Osnovna škola "Savo Ilić", Dobrota, Kotor</li>
+                <li>Gimnazija Kotor</li>
+                <li>Fox Public Schools</li>
+                <li>UDG</li>
+            </ol>
+        
+
+        
+            <h2>Programming languages</h2>
+            <ul>
+                <li>Python</li>
+                <li>Data programming with SQL</li>
+                <li>Octave</li>
+            </ul>
+        
+    </div>
+
+    <br><br><br>
+        
+    <div id="task_3">
+        <table> 
+            <caption>Favorite movies</caption>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Genre</th>
+                <th>Release date</th>
+                <th>Cover image</th>
+                <th>Link</th>
+            </tr>
+
+            <tr>
+                <td>Se7en</td>
+                <td>Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.</td>
+                <td>Crime, Drama, Mystery</td>
+                <td>1995</td>
+                <td><img src="se7en_cover.jpg" alt="cover_image" style="width:150px;height:200px;"></td>
+                <td><a href="https://www.imdb.com/title/tt0114369/" target="_blank">Details</a></td>
+            </tr>
+
+            <tr>
+                <td>The Hangover</td>
+                <td>Three buddies wake up from a bachelor party in Las Vegas, with no memory of the previous night and the bachelor missing. They make their way around the city in order to find their friend before his wedding.</td>
+                <td>Comedy</td>
+                <td>2009</td>
+                <td><img src="the_hangover_cover.jpg" alt="cover_image" style="width:150px;height:200px;"></td>
+                <td><a href="https://www.imdb.com/title/tt1119646/" target="_blank">Details</a></td>
+            </tr>
+
+            <tr>
+                <td>Wedding Crashers</td>
+                <td>John Beckwith and Jeremy Grey, a pair of committed womanizers who sneak into weddings to take advantage of the romantic tinge in the air, find themselves at odds with one another when John meets and falls for Claire Cleary.</td>
+                <td>Comedy, Romance</td>
+                <td>2005</td>
+                <td><img src="wedding_crashers_cover.jpg" alt="cover_image" style="width:150px;height: 200px;"></td>
+                <td><a href="https://www.imdb.com/title/tt0396269/" target="_blank">Details</a></td>
+            </tr>
+
+            <tr>
+                <td>Shutter Island</td>
+                <td>In 1954, a U.S. Marshal investigates the disappearance of a murderer who escaped from a hospital for the criminally insane. </td>
+                <td>Mystery, Thriller</td>
+                <td>2010</td>
+                <td><img src="shutter_island_cover.jpg" alt="cover_image" style="width:150px;height: 200px;"></td>
+                <td><a href="https://www.imdb.com/title/tt1130884/" target="_blank">Details</a></td>
+            </tr>
+
+            <tr>
+                <td>The Silence of the Lambs</td>
+                <td>A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.</td>
+                <td>Crime, Drama, Thriller</td>
+                <td>1991</td>
+                <td><img src="the_silence_of_the_lambs_cover.jpg" alt="cover_image" style="width:150px;height: 200px;"></td>
+                <td><a href="https://www.imdb.com/title/tt0102926/" target="_blank">Details</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="task_4">
+        <h1>Job Application With Resume Upload</h1>
+        
+
+        <form method="get">
+        <h2>Contact Information</h2>
+            First Name <br>
+                <input type="text" required> <br>
+            Last Name <br>
+                <input type="text" required><br>
+            Email <br>
+                <input type="email" required><br>
+            Phone <br>
+                <input type="tel" required>  
+        <h2>Position</h2>
+            Position you are applying for <br>
+                <select name="positions" required>
+                    <option value="">Choose</option>
+                    <option value="backend_python" selected>Backend Python</option>
+                    <option value="backend_nodejs">Backend NodeJS</option>
+                    <option value="frontend_react">Frontend React</option>
+                    <option value="frontend_angular">Frontend Angular</option>
+                </select>
+                <br> <br>
+            Resume upload <br>
+                <input type="file" name="resume_file" accept=".pdf, .doc">
+                <br><br>
+            Portfolio Website <br>
+                <input type="url">
+                <br><br>
+            Salary requirements <br>
+                <input type="text">
+                <br><br>
+            When can you start <br>
+                <input type="text">
+                <br><br>
+            Are you willing to relocate?<br>
+                <input type="radio" name="relocation" value="yes"> Yes <br>
+                <input type="radio" name="relocation" value="no"> No <br>
+                <input type="radio" name="relocation" value="not_sure"> Not sure
+                <br><br>
+            Last company you worked for <br>
+                <input type="text">
+                <br><br>
+            Comments <br>
+                <textarea name="comments" cols="30" rows="10"></textarea>
+        </form>
+    </div>
+
+    
+</body>
+</html>
