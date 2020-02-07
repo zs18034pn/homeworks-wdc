@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        table, th, td {
+        padding: 10px;
+        border: 1px solid black; 
+        border-collapse: collapse;
+        }
+      </style>
+</head>
+<body>
+    <table> <caption>Pizza Shop 2.0</caption>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="name" maxlength="20" required></td>
+        </tr>
+
+        <tr>
+            <td>Pizza Topping</td>
+            <td>
+                <input type="checkbox" name="toppings"  value="Supreme"> Supreme
+                <br><input type="checkbox" name="toppings" value="Vegeterian"> Vegeterian
+                <br><input type="checkbox" name="toppings" value="Hawaian"> Hawaian
+            
+            </td>
+        </tr>
+
+        <tr>
+           <td>Pizza Sauce</td>
+           <td>
+               <select name="pizza_souce">
+                    <option value="tomato">Tomato</option>
+                    <option value="garlic">Garlic</option>
+                    <option value="hot_sauce">Hot Sauce</option>
+                    <option value="mayo">Mayo</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td colspan="2" required> Delivery Instructions:
+                <br>
+                <textarea name="del_inst" cols="50" rows="10" maxlength="100"></textarea> 
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Send my Order">
+            </td>
+        </tr>
+
+    </table>
+</body>
+</html>

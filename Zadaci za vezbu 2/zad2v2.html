@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Software Order Form</h1>
+    <br>
+    <form>
+        License details <br>
+        <ul>
+            <li>Email address <input type="text" required></li><br>
+            <li>Website <input type="text" placeholder="https://www.example.com" required></li><br>
+            <li>Number of licenses <input type="text" placeholder="How many to buy(1-10)" required></li><br>
+        </ul>
+    </form>
+    <form>
+        Billing details <br>
+        <ul>
+            <li>Name <input type="text" placeholder="First Last" required></li> <br>
+            <li>Address <input type="text" placeholder="House, number, street, city, state" required></li><br>
+            <li>Postal code <input type="text" placeholder="Post code or zip code" required></li><br>
+            <li>Country <select name="conutry" required>
+                    <option value="Montenegro">Montenegro</option>
+                    <option value="USA">United States of America</option>
+                    <option value="China">China</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Japan">Japan</option>
+            </select></li><br>
+            <li>Phone <i>(optional)</i> <input type="text" placeholder="Include country prefix, e.g."></li><br>
+        </ul>
+    </form>
+    <form> 
+        Payment details <br>
+        <ul>
+            <li>Card number <input type="text" placeholder="As shown on he front of your card"></li> <br>
+            <li>CVV code <input type="text" placeholder="3-digit number on back of ypur card"></li> <br>
+            <li>Expiration date <input type="text" placeholder="YYYY-MM"></li><br>
+        </ul>
+    </form>
+    <input type="submit" value="Place Your Order">
+</body>
+</html>
